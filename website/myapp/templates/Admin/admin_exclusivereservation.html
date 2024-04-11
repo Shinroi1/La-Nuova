@@ -1,0 +1,40 @@
+{% extends 'Admin/admin_main.html' %}
+
+{% block content %}
+
+<div class="text-center">
+    <h1>EXCLUSIVE RESERVATION</h1>
+    <a href="{% url 'add_exclusivereservation' %}" class="btn btn-primary">Add</a>
+</div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Full Name</th>
+            <th scope="col">Dish Name:</th>
+            <th scope="col">Total Price of Dish/es:</th>
+            <th scope="col">Table Status:</th>
+            <th scope="col">Start Time:</th>
+            <th scope="col">End Time:</th>
+            <th scope="col">Duration Hours:</th>
+            <th scope="col">Date Created</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for exclusives in exclusive %}
+        <tr>
+            <td><a href="{% url 'exclusivereservation_record' exclusives.id %}">{{exclusives.id}}</a></td>
+            <td>{{exclusives.fullname}}</td>
+            <td>{{exclusives.party_size}}</td>
+            <td>{{exclusives.dish_name}}</td>
+            <td>{{exclusives.table_status}}</td>
+            <td>{{exclusives.reservation_start_time}}</td>
+            <td>{{exclusives.reservation_end_time}}</td>
+            <td>{{exclusives.reservation_duration_hours}}</td>
+            <td>{{exclusives.date_created}}</td>
+        </tr> 
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

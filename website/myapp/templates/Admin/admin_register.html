@@ -1,0 +1,15 @@
+{% block content %}
+
+<h2>Admin Register</h2>
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    {% if error %}
+        <p>{{ error }}</p>
+    {% endif %}
+    <button type="submit">Submit</button>
+</form>
+
+<p>Already have an account? <a href="{% url 'admin_login' %}">Login Now!</a></p>
+
+{% endblock %}

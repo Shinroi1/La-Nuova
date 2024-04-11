@@ -1,0 +1,46 @@
+{% extends 'Admin/admin_main.html'%}
+
+{%block content%}
+<html>
+    <head>
+    </head>
+<body>
+<div class="text-center">
+    <h1>NORMAL RESERVATION</h1>
+    <a href="{% url 'add_reservation' %}" class="btn btn-primary">Add Reservation</a>
+</div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Reservation ID</th>
+            <th>Table Number</th>
+            <th>Party Size</th>
+            <th>Dish Name</th>
+            <th>Total Prize</th>
+            <th>Table Status</th>
+            <th>Date Created</th>
+            <th>Full Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for info in reservation %}
+            <tr>
+                <td><a href="{% url 'reservation_record' info.id %}">{{info.id}}</td>
+                <td>{{info.table_number}}</td>
+                <td>{{info.party_size}}</td>
+                <td>{% for dish in info.dish_name.all %}
+                    {{ dish.dish_name }}
+                    {% if not forloop.last %}, {% endif %}
+                {% endfor %}</td>
+                <td> &#8369;{{info.total_price}}</td>
+                <td>{{info.table_status}}</td>
+                <td>{{info.date_created}}</td>
+                <td>{{info.fullname}}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>
+{% endblock %}

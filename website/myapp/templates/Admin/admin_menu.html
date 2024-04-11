@@ -1,0 +1,36 @@
+{% extends 'Admin/admin_main.html' %}
+
+{% block content %}
+
+<br>
+
+<div class="text-center">
+        <h5>MENU</h5>
+        <a href="{% url 'add_menu' %}" class="btn btn-primary">Add Menu</a>
+</div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Menu ID</th>
+                    <th>Menu Item</th>
+                    <th>Category</th>
+                    <th>Sub Category</th>
+                    <th>Ingredients</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in menu %}
+                    <tr>
+                        <td><a href="{% url 'menu_record' item.id %}">{{item.id}}</td>
+                        <td>{{item.dish_name}}</td>
+                        <td>{{item.category}}</td>
+                        <td>{{item.sub_category}}</td>
+                        <td>{{item.ingredients}}</td>
+                        <td>{{item.price}}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        {% endblock %}

@@ -1,0 +1,86 @@
+{% block content  %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  /* Custom styling for menu categories */
+  .menu-category {
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
+
+  .content-margin{
+    margin-top: 50px;
+  }
+
+  .centered-heading {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .menu-category:hover {
+    background-color: #e9e9e9;
+  }
+
+  /* Custom styling for the full menu section */
+  .full-menu {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 110%;
+    height: 800px; /* Set a fixed height or adjust as needed */
+    overflow-y: auto; /* Add scrollbar if content exceeds height */
+  }
+  
+</style>
+</head>
+<body>
+
+<div class="container content-margin">
+  <div class="row">
+    <!-- Left side with menu categories -->
+    <div class="col-lg-3">
+      <div class="menu-category">ANTIPASTI</div>
+      <div class="menu-category">INSALATA</div>
+      <div class="menu-category">ZUPPA</div>
+      <div class="menu-category">PANINI</div>
+      <div class="menu-category">RISOTTO</div>
+      <div class="menu-category">PIZZA</div>
+      <div class="menu-category">PASTA</div>
+      <div class="menu-category">SECONDI</div>
+      <div class="menu-category">CAFFE</div>
+      <div class="menu-category">REVANDE</div>
+      <div class="menu-category">ICE CREAM</div>
+      <div class="menu-category">CAKE</div>
+      <div class="menu-category">WINE</div>
+    </div>
+    
+    <!-- Right side with full menu -->
+    <div class="col-lg-9">
+      <div class="full-menu">
+        <h2 class="centered-heading">FAVORITES</h2>
+        <!-- Your full menu content here -->
+        <!-- You can add images, text, etc. for each menu item -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+{% endblock   %}
