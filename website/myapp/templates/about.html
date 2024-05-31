@@ -1,12 +1,52 @@
 {% extends 'user_navbar.html' %}
 
 {% block content %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
 
-<div>
+        .img-fluid{
+            max-width: 500px;
+            min-width: 500px;
+            justify-content: center;
 
-    <img src="/static/images/Tatler Dining.jpg">
+        }
 
+        .text-margin-top{
+            margin-top: 150px;
+        }
+
+        p{
+            font-family: 'Austin', Georgia, Times New Roman, Times, serif;
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class=" col-md-6 d-flex justify-content-center my-3"> 
+            <!-- Using Bootstrap class 'd-flex' with 'justify-content-center' for centering -->
+            <img src="/static/images/Tatler Dining.jpg" class="img-fluid"> 
+            <!-- 'img-fluid' class ensures responsiveness -->
+        </div>
+        <div class="col-md-6 text-margin-top">
+            <p class="fs-3"><b>An intimate Italian restaurant 
+                that continues to appease its loyal patrons with consistent, 
+                quality pasta</b></p>
+            <p class="fs-5">After a surprising renovation that updated this hole-in-the-wall at the San Antonio arcade, La Nuova Pasteleria remains as one of the best and most consistent Italian-style cafés in the capital. Favourites like the pasta al tartufo remain deliciously the same, while the capellini with Italian sausage, is a surprising but comforting discovery. The calamari is reminiscent of an excellent country club classic, served with a tart marinara sauce. Their secondi offering has recently been updated to include a very good rendition of veal in marsala sauce.</p>
+        </div>
+    </div>
 </div>
 
+</body>
+</html>
 
 {% endblock %}
+
