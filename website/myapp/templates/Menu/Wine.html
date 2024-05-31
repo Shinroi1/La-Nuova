@@ -1,0 +1,236 @@
+{% extends "user_navbar.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<html>
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/CSS/menu.css' %}">
+
+  </head>
+
+  <body>
+  
+    <div class="container-fluid p-0">
+      <div class="image-overlay">
+        <img src={% static '/images/Menu/Concorde.jpg' %} alt="Spinach Trifolate" class="header-image">
+        <div class="overlay-text"><b>WINE</b></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="content-margin">
+        <div class="row">
+          <!-- Left side with menu categories -->
+          <div class="col-lg-3">
+            <a href="{% url 'Full Menu' %}"><div class="menu-category"><b>FULL MENU</b></div></a>
+            <a href="{% url 'Antipasti' %}"><div class="menu-category"><b>ANTIPASTI</b></div></a>
+            <a href="{% url 'Insalata' %}"><div class="menu-category"><b>INSALATA</b></div></a>
+            <a href="{% url 'Zuppa' %}"><div class="menu-category"><b>ZUPPA</b></div></a>
+            <a href="{% url 'Panini' %}"><div class="menu-category"><b>PANINI</b></div></a>
+            <a href="{% url 'Risotto' %}"><div class="menu-category"><b>RISOTTO</b></div></a>
+            <a href="{% url 'Pizza' %}"><div class="menu-category"><b>PIZZA</b></div></a>
+            <a href="{% url 'Pasta' %}"><div class="menu-category"><b>PASTA</b></div></a>
+            <a href="{% url 'Secondi' %}"><div class="menu-category"><b>SECONDI</b></div></a>
+            <a href="{% url 'Caffe' %}"><div class="menu-category"><b>CAFFE</b></div></a>
+            <a href="{% url 'Bevande' %}"><div class="menu-category"><b>BEVANDE</b></div></a>
+            <a href="{% url 'Ice Cream' %}"><div class="menu-category"><b>ICE CREAM</b></div></a>
+            <a href="{% url 'Cake' %}"><div class="menu-category"><b>CAKE</b></div></a>
+            <a href="{% url 'Wine' %}"><div class="menu-category"><b>WINE</b></div></a>          
+          </div>
+        
+          <!-- Right side with full menu -->
+          <div class="col-lg-9">
+            <div class="centered-heading">
+              <h2><b>WHITE</b></h2>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+            
+              <div class="col">
+                <div class="card h-100">
+                  <img src="" class="card-img-top" alt="ANNA SPINATO PINOT GRIGIO">
+                  <div class="card-body">
+                    <h5 class="card-title">ANNA SPINATO PINOT GRIGIO</h5>
+                    <ul>
+                      <li>BOTTLE &#8369; 1,500.00</li>
+                      <li>GLASS &#8369; 380.00</li>
+                    </ul>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card h-100">
+                  <img src="" class="card-img-top" alt="FINCA LAS MORAS SAUVIGNON BLANC">
+                  <div class="card-body">
+                    <h5 class="card-title">FINCA LAS MORAS SAUVIGNON BLANC</h5>
+                    <ul>
+                      <li>BOTTLE &#8369; 1,500.00</li>
+                      <li>GLASS &#8369; 380.00</li>
+                    </ul>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card h-100">
+                  <img src="" class="card-img-top" alt="VILLA GIRARDI PINOT GRIGIO DELLE VENEZIE">
+                  <div class="card-body">
+                    <h5 class="card-title">VILLA GIRARDI PINOT GRIGIO DELLE VENEZIE</h5>
+                    <ul>
+                      <li>BOTTLE &#8369; 1,500.00</li>
+                      <li>GLASS &#8369; 380.00</li>
+                    </ul>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card h-100">
+                  <img src="" class="card-img-top" alt="WILD ROCK CHARDONNAY">
+                  <div class="card-body">
+                    <h5 class="card-title">WILD ROCK CHARDONNAY</h5>
+                    <ul>
+                      <li>BOTTLE &#8369; 1,500.00</li>
+                      <li>GLASS &#8369; 380.00</li>
+                    </ul>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card h-100">
+                  <img src="" class="card-img-top" alt="CRAGGY RANGE CHARDONNAY">
+                  <div class="card-body">
+                    <h5 class="card-title">CRAGGY RANGE CHARDONNAY</h5>
+                    <ul>
+                      <li>BOTTLE &#8369; 1,950.00</li>
+                    </ul>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card h-100">
+                  <img src="" class="card-img-top" alt="CRAGGY RANGE SAUVIGNON BLANC">
+                  <div class="card-body">
+                    <h5 class="card-title">CRAGGY RANGE SAUVIGNON BLANC</h5>
+                    <ul>
+                      <li>BOTTLE &#8369; 1,950.00</li>
+                    </ul>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+
+            <div class="centered-heading mt-5">
+              <h2><b>RED</b></h2>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+              <div class="col">
+                <div class="card h-100">
+                  <img src="" class="card-img-top" alt="FINCA LAS MORAS MALBEC ">
+                  <div class="card-body">
+                    <h5 class="card-title">FINCA LAS MORAS MALBEC </h5>
+                    <ul>
+                      <li>BOTTLE &#8369; 1,500.00</li>
+                      <li>GLASS &#8369; 380.00</li>
+                    </ul>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card h-100">
+                  <img src="" class="card-img-top" alt="VILLA GIRARDI VALPOLICELLA CLASSICO">
+                  <div class="card-body">
+                    <h5 class="card-title">VILLA GIRARDI VALPOLICELLA CLASSICO</h5>
+                    <ul>
+                      <li>BOTTLE &#8369; 1,500.00</li>
+                      <li>GLASS &#8369; 380.00</li>
+                    </ul>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
+              </div>
+        
+                    <div class="col">
+                <div class="card h-100">
+                  <img src="" class="card-img-top" alt="WILD ROCK MERLOT">
+                  <div class="card-body">
+                    <h5 class="card-title">WILD ROCK MERLOT</h5>
+                    <ul>
+                      <li>BOTTLE &#8369; 1,500.00</li>
+                      <li>GLASS &#8369; 380.00</li>
+                    </ul>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card h-100">
+                  <img src="" class="card-img-top" alt="PRESTIGE CHIANTI CLASSICO">
+                  <div class="card-body">
+                    <h5 class="card-title">PRESTIGE CHIANTI CLASSICO</h5>
+                    <ul>
+                      <li>BOTTLE &#8369; 1,950.00</li>
+                    </ul>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card h-100">
+                  <img src="" class="card-img-top" alt="BERONIA CRIANZA RIOJA">
+                  <div class="card-body">
+                    <h5 class="card-title">BERONIA CRIANZA RIOJA</h5>
+                    <ul>
+                      <li>BOTTLE &#8369; 1,950.00</li>
+                    </ul>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card h-100">
+                  <img src="" class="card-img-top" alt="BERONIA TEMPRANILL">
+                  <div class="card-body">
+                    <h5 class="card-title">BERONIA TEMPRANILL</h5>
+                    <ul>
+                      <li>BOTTLE &#8369; 1,950.00</li>
+                    </ul>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+        
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
+
+{% endblock %}

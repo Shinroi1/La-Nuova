@@ -1,0 +1,239 @@
+{% extends "user_navbar.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<html>
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/CSS/menu.css' %}">
+
+  </head>
+
+  <body>
+  
+    <div class="container-fluid p-0">
+      <div class="image-overlay">
+        <img src={% static '/images/Menu/Grigilia Di Pesce.jpg' %} alt="Spinach Trifolate" class="header-image">
+        <div class="overlay-text"><b>SECONDI</b></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="content-margin">
+        <di class="row">
+          <!-- Left side with menu categories -->
+          <div class="col-lg-3">
+            <a href="{% url 'Full Menu' %}"><div class="menu-category"><b>FULL MENU</b></div></a>
+            <a href="{% url 'Antipasti' %}"><div class="menu-category"><b>ANTIPASTI</b></div></a>
+            <a href="{% url 'Insalata' %}"><div class="menu-category"><b>INSALATA</b></div></a>
+            <a href="{% url 'Zuppa' %}"><div class="menu-category"><b>ZUPPA</b></div></a>
+            <a href="{% url 'Panini' %}"><div class="menu-category"><b>PANINI</b></div></a>
+            <a href="{% url 'Risotto' %}"><div class="menu-category"><b>RISOTTO</b></div></a>
+            <a href="{% url 'Pizza' %}"><div class="menu-category"><b>PIZZA</b></div></a>
+            <a href="{% url 'Pasta' %}"><div class="menu-category"><b>PASTA</b></div></a>
+            <a href="{% url 'Secondi' %}"><div class="menu-category"><b>SECONDI</b></div></a>
+            <a href="{% url 'Caffe' %}"><div class="menu-category"><b>CAFFE</b></div></a>
+            <a href="{% url 'Bevande' %}"><div class="menu-category"><b>BEVANDE</b></div></a>
+            <a href="{% url 'Ice Cream' %}"><div class="menu-category"><b>ICE CREAM</b></div></a>
+            <a href="{% url 'Cake' %}"><div class="menu-category"><b>CAKE</b></div></a>
+            <a href="{% url 'Wine' %}"><div class="menu-category"><b>WINE</b></div></a>          
+          </div>
+        
+          <!-- Right side with full menu -->
+          <div class="col-lg-9">
+            <div class="centered-heading">
+              <h2><b>PESCE/FISH</b></h2>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+            
+              <div class="col">
+                <div class="card h-100">
+                  <img src={% static '/images/Menu/Al Forno.jpg' %} class="card-img-top" alt="AL FORNO">
+                  <div class="card-body">
+                    <h5 class="card-title">AL FORNO &#8369; 1,250.00</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card h-100">
+                  <img src="" class="card-img-top" alt="FILETTO DI MUGNAIA">
+                  <div class="card-body">
+                    <h5 class="card-title">FILETTO DI MUGNAIA &#8369; 795.00</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card h-100">
+                  <img src="" class="card-img-top" alt="FILETTO DI SALMON">
+                  <div class="card-body">
+                    <h5 class="card-title">FILETTO DI SALMON - &#8369; 1,250.00</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card h-100">
+                  <img src={% static '/images/Menu/Grigilia Di Pesce.jpg' %} class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">GRIGILIA DI PESCE - &#8369; 855.00</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card h-100">
+                  <img src={% static '/images/Menu/Cacciucco ala Livornese.jpg' %} class="card-img-top" alt="CACCIUCO ALLA LIVORNESE">
+                  <div class="card-body">
+                    <h5 class="card-title">CACCIUCO ALLA LIVORNESE &#8369; 1,150.00</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+
+            <div class="centered-heading mt-5"><h2><b>POLLO/CHICKEN</b></h2></div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+              <div class="col">
+                <div class="card h-100">
+                  <img src={% static '/images/Menu/Petto Funghi.jpg' %} class="card-img-top" alt="PETTO FUNGHI">
+                  <div class="card-body">
+                    <h5 class="card-title">PETTO FUNGHI &#8369; 945.00</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card h-100">
+                  <img src={% static '/images/Menu/Petto Asparagi.jpg' %} class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">PETTO ASPARAGI &#8369; 925.00</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card h-100">
+                  <img src="" class="card-img-top" alt="PETTO ALEXI">
+                  <div class="card-body">
+                    <h5 class="card-title">PETTO ALEXI &#8369; 925.00</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card h-100">
+                  <img src={% static '/images/Menu/Accrotolato.jpg' %} class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">	ACCROTOLATO &#8369; 985.00</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card h-100">
+                  <img src={% static '/images/Menu/Petto Diavola.jpg' %} class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">PETTO DIAVOLA &#8369; 925.00</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="centered-heading mt-5">
+              <h2><b>MANZO/BEEF</b></h2>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+              <div class="col">
+                <div class="card h-100">
+                  <img src={% static '/images/Menu/Filetto Di Manzo.jpg' %} class="card-img-top" alt="FILETTO DI MANZO AI FUNGHI">
+                  <div class="card-body">
+                    <h5 class="card-title">FILETTO DI MANZO AI FUNGHI - &#8369; 1,250.00</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col">
+                <div class="card h-100">
+                  <img src={% static '/images/Menu/Agnello alla Scottadito.jpg' %} class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">AGNELLO ALLA SCOTTADITO &#8369; 1,850.00</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col">
+                <div class="card h-100">
+                  <img src={% static '/images/Menu/La Bistecca.jpg' %} class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">LA BISTECCA &#8369; 2,250.00</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col">
+                <div class="card h-100">
+                  <img src={% static '/images/Menu/Vitello alla Milanese.jpg' %} class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">VITELLO ALLA MILANESE &#8369; 1,150.00</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col">
+                <div class="card h-100">
+                  <img src="" class="card-img-top" alt="VITELLO AL MARSALA">
+                  <div class="card-body">
+                    <h5 class="card-title">VITELLO AL MARSALA &#8369; 1,350.00</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col">
+                <div class="card h-100">
+                  <img src="" class="card-img-top" alt="VITELLO AI FUNGHI">
+                  <div class="card-body">
+                    <h5 class="card-title">VITELLO AI FUNGHI &#8369; 1,250.00</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
+
+{% endblock %}

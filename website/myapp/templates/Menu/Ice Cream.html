@@ -1,0 +1,78 @@
+{% extends "user_navbar.html" %}
+
+{% load static %}
+
+{% block content %}
+
+
+<html>
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/CSS/menu.css' %}">
+
+  </head>
+
+  <body>
+  
+    <div class="container-fluid p-0">
+      <div class="image-overlay">
+        <img src={% static '/images/Menu/Brodetto di Mare.jpg' %} alt="Spinach Trifolate" class="header-image">
+        <div class="overlay-text"><b>CAFFE</b></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="content-margin">
+        <div class="row">
+          <!-- Left side with menu categories -->
+          <div class="col-lg-3">
+            <a href="{% url 'Full Menu' %}"><div class="menu-category"><b>FULL MENU</b></div></a>
+            <a href="{% url 'Antipasti' %}"><div class="menu-category"><b>ANTIPASTI</b></div></a>
+            <a href="{% url 'Insalata' %}"><div class="menu-category"><b>INSALATA</b></div></a>
+            <a href="{% url 'Zuppa' %}"><div class="menu-category"><b>ZUPPA</b></div></a>
+            <a href="{% url 'Panini' %}"><div class="menu-category"><b>PANINI</b></div></a>
+            <a href="{% url 'Risotto' %}"><div class="menu-category"><b>RISOTTO</b></div></a>
+            <a href="{% url 'Pizza' %}"><div class="menu-category"><b>PIZZA</b></div></a>
+            <a href="{% url 'Pasta' %}"><div class="menu-category"><b>PASTA</b></div></a>
+            <a href="{% url 'Secondi' %}"><div class="menu-category"><b>SECONDI</b></div></a>
+            <a href="{% url 'Caffe' %}"><div class="menu-category"><b>CAFFE</b></div></a>
+            <a href="{% url 'Bevande' %}"><div class="menu-category"><b>BEVANDE</b></div></a>
+            <a href="{% url 'Ice Cream' %}"><div class="menu-category"><b>ICE CREAM</b></div></a>
+            <a href="{% url 'Cake' %}"><div class="menu-category"><b>CAKE</b></div></a>
+            <a href="{% url 'Wine' %}"><div class="menu-category"><b>WINE</b></div></a>
+          </div>
+        
+          <!-- Right side with full menu -->
+          <div class="col-lg-9">
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+            
+              <div class="col">
+                <div class="card h-100">
+                  <img src="" class="card-img-top" alt="CARMEN'S BEST">
+                  <div class="card-body">
+                    <h5 class="card-title">CARMEN'S BEST</h5>
+                                          <ul>
+                                            <li>1 PINT &#8369; 588.00</li>
+                                            <li>2 SCOOPS &#8369; 200.00</li>
+                                            <li>3 SCOOPS &#8369; 280.00</li>
+                                          </ul>
+                    <p class="card-text">Try our Carmen's best</p>
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+        
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
+
+{% endblock %}
